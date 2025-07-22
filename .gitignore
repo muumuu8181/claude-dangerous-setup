@@ -1,0 +1,69 @@
+# Claude Safe Dangerous Setup - .gitignore
+
+# Security - Never commit secrets
+*.key
+*.pem
+*.p12
+*.p8
+*.oauth
+*secret*
+*token*
+*credentials*
+*.env
+.env.*
+
+# Backup directories
+claude-sandbox/backups/*
+claude-sandbox/logs/*
+
+# Work history logs
+work-history/*.log
+
+# Temporary files
+*.tmp
+*.log
+*.pid
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Other repositories
+claude-ai-toolkit*/
+test-*/
+
+# Cache directories
+.cache/
+.npm/
+.config/
+.local/
+
+# Termux specific
+.termux/
+.bash_history
+.bashrc
